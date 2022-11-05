@@ -288,13 +288,11 @@ function ui.Uninject()
 end
 
 function modules.SayHi()
-	ui.AddLineToArray("Velocity","Rise B1.0")
 	print("hi")
 	ui.CreateNotification("test","toggle",3)
 end
 
 function modules.Velocity()
-	ui.AddLineToArray("Velocity","Rise B1.0")
 	local KnockbackTable = debug.getupvalue(require(game:GetService("ReplicatedStorage").TS.damage["knockback-util"]).KnockbackUtil.calculateKnockbackVelocity, 1)
     wait()
     KnockbackTable["kbDirectionStrength"] = 0
@@ -302,7 +300,6 @@ function modules.Velocity()
 end
 
 function modules.KALegit()
-	ui.AddLineToArray("LegitAura","Rise B1.0")
 	local player = game:GetService("Players")
 	local lplr = player.LocalPlayer
 	local cam = workspace.CurrentCamera
@@ -332,12 +329,10 @@ function modules.KALegit()
 end
 
 function modules.Speed()
-	ui.AddLineToArray("Speed","Rise B1.0")
 	lplr.Character.Humanoid.WalkSpeed = 23
 end
 
 function modules.Fly1()
-	ui.AddLineToArray("StudFly1","Rise B1.0")
 	local e = Instance.new("Part",workspace)
 	e.Size = Vector3.new(99999999,2,999999999999)
 	e.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -355,11 +350,9 @@ function modules.Fly1()
 	end
 
 	e.Touched:connect(PlayerTouched)
-	ui.RemoveArrayLine("StudFly1","Rise B1.0")
 end
 
 function modules.Fly2()
-	ui.AddLineToArray("StudFly2","Rise B1.0")
 	local e = Instance.new("Part",workspace)
 	e.Size = Vector3.new(99999999,2,999999999999)
 	e.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -387,11 +380,9 @@ function modules.Fly2()
 
 	e.Touched:connect(PlayerTouched)
 	e.Touched:connect(PlayerTouched2)
-	ui.RemoveArrayLine("StudFly2","Rise B1.0")
 end
 
 function modules.HighJump()
-	ui.AddLineToArray("VeloHighJump","Rise B1.0")
 	local Velocity = Instance.new("BodyVelocity",game.Players.LocalPlayer.Character.HumanoidRootPart)
 	Velocity.Name = "Velocity1"
 	Velocity.Velocity = Vector3.new(0,500,0)
@@ -399,11 +390,9 @@ function modules.HighJump()
 	wait(1.5)
 	game.Workspace.Gravity = 192.6
 	game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity1:Destroy()
-	ui.RemoveArrayLine("VeloHighJump","Rise B1.0")
 end
 
 function modules.DamageLessTPHighJump()
-	ui.AddLineToArray("WatchDogTpHighJump","Rise B1.0")
 	game.Workspace.Gravity = 1
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 50, 0)
 wait()
@@ -438,24 +427,19 @@ wait()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, 50, 0)
 wait()
 game.Workspace.Gravity = 192.6
-ui.RemoveArrayLine("WatchDogTpHighJump","Rise B1.0")
 end
 
 function modules.LongJump()
-	ui.AddLineToArray("LongJump","Rise B1.0")
 	game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 	game.Workspace.Gravity = 10
 	wait(2.2)
 	game.Workspace.Gravity = 192.6
-	ui.RemoveArrayLine("LongJump","Rise B1.0")
 end
 
 function modules.DamageTPForward()
     if game.Players.LocalPlayer.Character.Humanoid.Health ~= 100 then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 100
-		ui.AddLineToArray("WatchDogDamageTP1","Rise B1.0")
     end
-	ui.RemoveArrayLine("WatchDogDamageTP1","Rise B1.0")
 end
 
 function modules.ESP()
@@ -479,7 +463,6 @@ function modules.ESP()
 			gui:Clone().Parent = v.Character.Head;
 		end
 	end
-	ui.AddLineToArray("ESP","Rise B1.0")
 end
 
 function modules.Chams()
@@ -505,7 +488,6 @@ function modules.Chams()
 				esp.Parent = chr
 			end)
 	end)
-	ui.AddLineToArray("Chams","Rise B1.0")
 end
 
 function modules.SemiACBypasser()
@@ -547,7 +529,6 @@ for _,v in pairs(lplr.Character:GetChildren()) do
     end
 end
 
-ui.AddLineToArray("ACBypasser","Rise B1.0")
 
 end
 
