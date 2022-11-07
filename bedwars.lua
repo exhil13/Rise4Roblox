@@ -586,4 +586,4 @@ ui.NewButton("Chams","Chams","Visuals")
 
 ui.CreateLib("Bypasses",themes.sky) 
 ui.NewButton("BadSemiACBypasser","ACBypasser","Bypasses")
-ui.CreateNotification("Rise","Rise Public is discontinued because am lazy lol | dm Spring67#6969 if u want to have a chance at private",7)
+ui.CreateNotification("Rise/Noboline","Rise/Noboline Public is discontinued, or whatever you call it because am lazy lol | dm Spring67#6969 if u want to have a chance at private",15)
