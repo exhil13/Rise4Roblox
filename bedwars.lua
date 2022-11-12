@@ -299,7 +299,7 @@ function modules.Velocity()
 	KnockbackTable["kbUpwardStrength"] = 0
 end
 
-function modules.KALegit()
+function modules.KA()
 	local player = game:GetService("Players")
 	local lplr = player.LocalPlayer
 	local cam = workspace.CurrentCamera
@@ -565,8 +565,7 @@ end
 
 
 ui.CreateLib("Combat",themes.sky) 
-ui.NewButton("LegitAura","KALegit","Combat")
-ui.NewButton("BlatantAura","AuraBlatant","Combat")
+ui.NewButton("LegitAura","KA","Combat")
 ui.NewButton("Velocity","Velocity","Combat")
 
 ui.CreateLib("Movement",themes.sky) 
@@ -586,4 +585,4 @@ ui.NewButton("Chams","Chams","Visuals")
 
 ui.CreateLib("Bypasses",themes.sky) 
 ui.NewButton("BadSemiACBypasser","ACBypasser","Bypasses")
-ui.CreateNotification("Rise/Noboline","Rise/Noboline Public is discontinued, or whatever you call it because am lazy lol | dm Spring67#6969 if u want to have a chance at private",15)
+ui.CreateNotification("Rise/Noboline Team","Rise/Noboline Public is discontinued, or whatever you call it because am lazy lol | dm Spring67#6969 if u want to have a chance at private",15)
